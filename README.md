@@ -1,6 +1,6 @@
 # grunt-contrib-sonar
 
-> Bumps up the version using semver
+> This was written to bump up the version attribute in sonar property file as part of the CI process. 
 
 ## Getting Started
 This plugin requires Grunt `~0.4.4`
@@ -20,70 +20,40 @@ grunt.loadNpmTasks('grunt-contrib-sonar');
 ## The "contrib_sonar" task
 
 ### Overview
-In your project's Gruntfile, add a section named `contrib_sonar` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `sonar` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  contrib_sonar: {
-    options: {
-      // Task-specific options go here.
+  sonar: {
+  // TODO more functions to be added later
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
 });
 ```
-
-### Options
-
-#### options.separator
-Type: `String`
-Default value: `',  '`
-
-A string value that is used to do something with whatever.
-
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
 
 ### Usage Examples
 
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
 ```js
 grunt.initConfig({
-  contrib_sonar: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+  sonar: {
   },
 });
 ```
 
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+Copy the sonar property file at the same level as the Gruntfile
 
-```js
-grunt.initConfig({
-  contrib_sonar: {
-    options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-});
+```bash
+grunt sonar:sonar.properties:patch
+Running "sonar:sonar.properties:patch" (sonar) task
+Updating version in "sonar.properties" for type "patch"
+version updated to 0.0.21
 ```
+Since this uses semver you can pass the following options
+major, premajor, minor, preminor, patch, prepatch, or prerelease
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+read: https://github.com/isaacs/node-semver for more information
 
-## Release History
-_(Nothing yet)_
+
+## TODO
+_Add better error handling
+-Update the tests so that it actually works
+

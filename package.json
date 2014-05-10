@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-sonar",
   "description": "Bumps up the version using semver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://blog.rajatpandit.com",
   "author": {
     "name": "Rajat Pandit",
@@ -18,7 +18,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://blog.rajatpandit.com/blob/master/LICENSE-MIT"
+      "url": ""
     }
   ],
   "engines": {
@@ -37,7 +37,7 @@
     "grunt": "~0.4.4"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin", "sonar"
   ],
   "dependencies": {
     "semver": "^2.3.0"
