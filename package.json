@@ -1,7 +1,7 @@
 {
-  "name": "grunt-vs-sonar",
+  "name": "grunt-vc-sonar",
   "description": "Bumps up the version using semver",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "homepage": "https://github.com/rajatpandit/grunt-vc-sonar",
   "author": {
     "name": "Rajat Pandit",
