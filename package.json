@@ -1,8 +1,8 @@
 {
-  "name": "grunt-contrib-sonar",
+  "name": "sonar",
   "description": "Bumps up the version using semver",
-  "version": "0.0.4",
-  "homepage": "http://blog.rajatpandit.com",
+  "version": "0.0.5",
+  "homepage": "https://github.com/rajatpandit/grunt-contrib-sonar",
   "author": {
     "name": "Rajat Pandit",
     "email": "rp@rajatpandit.com",
