@@ -1,8 +1,8 @@
 {
   "name": "grunt-vs-sonar",
   "description": "Bumps up the version using semver",
-  "version": "0.0.6",
-  "homepage": "https://github.com/rajatpandit/grunt-contrib-sonar",
+  "version": "0.0.7",
+  "homepage": "https://github.com/rajatpandit/grunt-vc-sonar",
   "author": {
     "name": "Rajat Pandit",
     "email": "rp@rajatpandit.com",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github/rajatpandit/grunt-contrib-sonar.git"
+    "url": "git://github/rajatpandit/grunt-vc-sonar.git"
   },
   "bugs": {
     "url": ""
