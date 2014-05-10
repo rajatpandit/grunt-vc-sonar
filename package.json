@@ -1,0 +1,45 @@
+{
+  "name": "grunt-contrib-sonar",
+  "description": "Bumps up the version using semver",
+  "version": "0.0.1",
+  "homepage": "http://blog.rajatpandit.com",
+  "author": {
+    "name": "Rajat Pandit",
+    "email": "rp@rajatpandit.com",
+    "url": "http://rajatpandit.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github/rajatpandit/grunt-contrib-sonar.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://blog.rajatpandit.com/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.4"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.4"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "semver": "^2.3.0"
+  }
+}
