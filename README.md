@@ -17,7 +17,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-contrib-sonar');
 ```
 
-## The "contrib_sonar" task
+## The "grunt-contrib-sonar" task
 
 ### Overview
 In your project's Gruntfile, add a section named `sonar` to the data object passed into `grunt.initConfig()`.
@@ -39,10 +39,10 @@ grunt.initConfig({
 });
 ```
 
-Copy the sonar property file at the same level as the Gruntfile
+Copy the sonar property file at the same level as the Gruntfile and run the following command:
 
 ```bash
-grunt sonar:sonar.properties:patch
+> grunt sonar:sonar.properties:patch
 Running "sonar:sonar.properties:patch" (sonar) task
 Updating version in "sonar.properties" for type "patch"
 version updated to 0.0.21
