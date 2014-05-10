@@ -54,6 +54,6 @@ read: https://github.com/isaacs/node-semver for more information
 
 
 ## TODO
-_Add better error handling
--Update the tests so that it actually works
+- Add better error handling
+- Update the tests so that it actually works
 

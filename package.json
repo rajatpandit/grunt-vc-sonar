@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-sonar",
   "description": "Bumps up the version using semver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://blog.rajatpandit.com",
   "author": {
     "name": "Rajat Pandit",
