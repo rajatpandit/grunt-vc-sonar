@@ -35,11 +35,15 @@ grunt.initConfig({
 ```js
 grunt.initConfig({
   sonar: {
+    mode: 'jenkins'; // other option being 'sonar' passing jenkins adds build id to current version number
   },
 });
 ```
 
 Copy the sonar property file at the same level as the Gruntfile and run the following command:
+
+
+For mode is sonar:
 
 ```bash
 > grunt sonar:sonar.properties:patch
@@ -52,6 +56,14 @@ major, premajor, minor, preminor, patch, prepatch, or prerelease
 
 read: https://github.com/isaacs/node-semver for more information
 
+For mode is jenkins:
+
+```bash
+> grunt sonar:sonar.properties:1234 # where 1234 is the build id, this could come form the jenkins build variable
+Running "sonar:sonar.properties:1234" (sonar) task
+Updating version in "sonar.properties" for type "patch"
+version updated to 0.0.21-1234
+```
 
 ## TODO
 - Add better error handling
