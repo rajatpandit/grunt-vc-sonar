@@ -16,10 +16,10 @@ module.exports = function(grunt) {
   grunt.registerTask('sonar', 'Bumps up the version using semver', function(file, bump_type) {
     var options = this.options(); // get the options provided
     grunt.log.writeln('Updating version in "%s" for type "%s"', file, bump_type);
-    var done = this.async(), // this is an async process
+    var done            = this.async(), // this is an async process
         current_version = '',
-        flag = false, // set to true if a pattern is found
-        new_version = '';
+        flag            = false, // set to true if a pattern is found
+        new_version     = '';
         fs.readFile(file, function(err, data) {
         if (err) { throw err; } // TODO do this properly
         data = data.toString().split("\n");
