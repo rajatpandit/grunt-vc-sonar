@@ -14,7 +14,9 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Configuration to be run (and then tested).
     sonar: {
-        mode: 'jenkins'
+        options: {
+            mode: 'jenkins'
+        }
     },
   });
 
