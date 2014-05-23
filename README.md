@@ -25,7 +25,9 @@ In your project's Gruntfile, add a section named `sonar` to the data object pass
 ```js
 grunt.initConfig({
   sonar: {
-  // TODO more functions to be added later
+        options: {
+            mode: 'jenkins' // sonar
+        }
     },
 });
 ```
@@ -35,7 +37,9 @@ grunt.initConfig({
 ```js
 grunt.initConfig({
   sonar: {
-    mode: 'jenkins'; // other option being 'sonar' passing jenkins adds build id to current version number
+    options: {
+        mode: 'jenkins'; // other option being 'sonar' passing jenkins adds build id to current version number
+    }
   },
 });
 ```
@@ -59,10 +63,10 @@ read: https://github.com/isaacs/node-semver for more information
 For mode is jenkins:
 
 ```bash
-> grunt sonar:sonar.properties:1234 # where 1234 is the build id, this could come form the jenkins build variable
-Running "sonar:sonar.properties:1234" (sonar) task
+> grunt sonar:sonar.properties:build1234 # where 1234 is the build id, this could come form the jenkins build variable
+Running "sonar:sonar.properties:build1234" (sonar) task
 Updating version in "sonar.properties" for type "patch"
-version updated to 0.0.21-1234
+version updated to 0.0.21+build1234
 ```
 
 ## TODO
