@@ -31,7 +31,6 @@ module.exports = function(grunt) {
                 if (2 === holder.length) {
                     current_version = holder[1];
                     if (options.mode && 'jenkins' === options.mode) {
-                        console.log('inreasnig');
                         new_version = semver.clean(current_version) + '+' + bump_type; // append the build number
                     } else  {
                         new_version = semver.inc(current_version, bump_type); // update the new version
