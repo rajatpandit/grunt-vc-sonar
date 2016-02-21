@@ -34,10 +34,11 @@
     "grunt": "~0.4.4"
   },
   "peerDependencies": {
-    "grunt": "~0.4.4"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
-    "gruntplugin", "sonar"
+    "gruntplugin",
+    "sonar"
   ],
   "dependencies": {
     "semver": "^2.3.0"
